@@ -1,0 +1,91 @@
+SET GLOBAL local_infile = 1;
+LOAD DATA LOCAL INFILE #add file path
+INTO TABLE pitching_stats
+FIELDS TERMINATED BY ','
+OPTIONALLY ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES 
+(@name,player_id,`year`,p_game,p_formatted_ip,pa,ab,hit,single,`double`,triple,home_run,strikeout,walk,k_percent,bb_percent,batting_avg,slg_percent,on_base_percent,on_base_plus_slg,babip,p_earned_run,p_run,p_era,p_swinging_strike,xba,xslg,woba,xwoba,xobp,xiso,exit_velocity_avg,launch_angle_avg,sweet_spot_percent,barrel_batted_rate,hard_hit_percent,avg_best_speed,avg_hyper_speed,z_swing_percent,z_swing_miss_percent,oz_swing_percent,oz_swing_miss_percent,oz_contact_percent,out_zone_swing_miss,out_zone_swing,out_zone_percent,out_zone,iz_contact_percent,in_zone_swing_miss,in_zone_swing,edge_percent,edge,whiff_percent,swing_percent,f_strike_percent,groundballs_percent,groundballs,flyballs_percent,flyballs,linedrives_percent,linedrives,popups_percent,popups,pitch_hand,arm_angle,n_ff_formatted,ff_avg_speed,ff_avg_spin,ff_avg_break_x,ff_avg_break_z,ff_avg_break_z_induced,ff_avg_break,ff_range_speed,n_sl_formatted,sl_avg_speed,sl_avg_spin,sl_avg_break_x,sl_avg_break_z,sl_avg_break_z_induced,sl_avg_break,sl_range_speed,n_ch_formatted,ch_avg_speed,ch_avg_spin,ch_avg_break_x,ch_avg_break_z,ch_avg_break_z_induced,ch_avg_break,ch_range_speed,n_cu_formatted,cu_avg_speed,cu_avg_spin,cu_avg_break_x,cu_avg_break_z,cu_avg_break_z_induced,cu_avg_break,cu_range_speed,n_si_formatted,si_avg_speed,si_avg_spin,si_avg_break_x,si_avg_break_z,si_avg_break_z_induced,si_avg_break,si_range_speed,n_fc_formatted,fc_avg_speed,fc_avg_spin,fc_avg_break_x,fc_avg_break_z,fc_avg_break_z_induced,fc_avg_break,fc_range_speed,n_fs_formatted,fs_avg_speed,fs_avg_spin,fs_avg_break_x,fs_avg_break_z,fs_avg_break_z_induced,fs_avg_break,fs_range_speed,n_st_formatted,st_avg_speed,st_avg_spin,st_avg_break_x,st_avg_break_z,st_avg_break_z_induced,st_avg_break,st_range_speed,n_sv_formatted,sv_avg_speed,sv_avg_spin,sv_avg_break_x,sv_avg_break_z,sv_avg_break_z_induced,sv_avg_break,sv_range_speed
+)
+SET
+	`last_name, first_name` = @name,
+    n_ff_formatted = NULLIF(n_ff_formatted, ''),
+    ff_avg_speed = NULLIF(ff_avg_speed, ''),
+    ff_avg_spin = NULLIF(ff_avg_spin, ''),
+    ff_avg_break_x = NULLIF(ff_avg_break_x, ''),
+    ff_avg_break_z = NULLIF(ff_avg_break_z, ''),
+    ff_avg_break_z_induced = NULLIF(ff_avg_break_z_induced, ''),
+    ff_avg_break = NULLIF(ff_avg_break, ''),
+    ff_range_speed = NULLIF(ff_range_speed, ''),
+
+    n_sl_formatted = NULLIF(n_sl_formatted, ''),
+    sl_avg_speed = NULLIF(sl_avg_speed, ''),
+    sl_avg_spin = NULLIF(sl_avg_spin, ''),
+    sl_avg_break_x = NULLIF(sl_avg_break_x, ''),
+    sl_avg_break_z = NULLIF(sl_avg_break_z, ''),
+    sl_avg_break_z_induced = NULLIF(sl_avg_break_z_induced, ''),
+    sl_avg_break = NULLIF(sl_avg_break, ''),
+    sl_range_speed = NULLIF(sl_range_speed, ''),
+
+    n_ch_formatted = NULLIF(n_ch_formatted, ''),
+    ch_avg_speed = NULLIF(ch_avg_speed, ''),
+    ch_avg_spin = NULLIF(ch_avg_spin, ''),
+    ch_avg_break_x = NULLIF(ch_avg_break_x, ''),
+    ch_avg_break_z = NULLIF(ch_avg_break_z, ''),
+    ch_avg_break_z_induced = NULLIF(ch_avg_break_z_induced, ''),
+    ch_avg_break = NULLIF(ch_avg_break, ''),
+    ch_range_speed = NULLIF(ch_range_speed, ''),
+
+    n_cu_formatted = NULLIF(n_cu_formatted, ''),
+    cu_avg_speed = NULLIF(cu_avg_speed, ''),
+    cu_avg_spin = NULLIF(cu_avg_spin, ''),
+    cu_avg_break_x = NULLIF(cu_avg_break_x, ''),
+    cu_avg_break_z = NULLIF(cu_avg_break_z, ''),
+    cu_avg_break_z_induced = NULLIF(cu_avg_break_z_induced, ''),
+    cu_avg_break = NULLIF(cu_avg_break, ''),
+    cu_range_speed = NULLIF(cu_range_speed, ''),
+
+    n_si_formatted = NULLIF(n_si_formatted, ''),
+    si_avg_speed = NULLIF(si_avg_speed, ''),
+    si_avg_spin = NULLIF(si_avg_spin, ''),
+    si_avg_break_x = NULLIF(si_avg_break_x, ''),
+    si_avg_break_z = NULLIF(si_avg_break_z, ''),
+    si_avg_break_z_induced = NULLIF(si_avg_break_z_induced, ''),
+    si_avg_break = NULLIF(si_avg_break, ''),
+    si_range_speed = NULLIF(si_range_speed, ''),
+
+    n_fc_formatted = NULLIF(n_fc_formatted, ''),
+    fc_avg_speed = NULLIF(fc_avg_speed, ''),
+    fc_avg_spin = NULLIF(fc_avg_spin, ''),
+    fc_avg_break_x = NULLIF(fc_avg_break_x, ''),
+    fc_avg_break_z = NULLIF(fc_avg_break_z, ''),
+    fc_avg_break_z_induced = NULLIF(fc_avg_break_z_induced, ''),
+    fc_avg_break = NULLIF(fc_avg_break, ''),
+    fc_range_speed = NULLIF(fc_range_speed, ''),
+
+    n_fs_formatted = NULLIF(n_fs_formatted, ''),
+    fs_avg_speed = NULLIF(fs_avg_speed, ''),
+    fs_avg_spin = NULLIF(fs_avg_spin, ''),
+    fs_avg_break_x = NULLIF(fs_avg_break_x, ''),
+    fs_avg_break_z = NULLIF(fs_avg_break_z, ''),
+    fs_avg_break_z_induced = NULLIF(fs_avg_break_z_induced, ''),
+    fs_avg_break = NULLIF(fs_avg_break, ''),
+    fs_range_speed = NULLIF(fs_range_speed, ''),
+
+    n_st_formatted = NULLIF(n_st_formatted, ''),
+    st_avg_speed = NULLIF(st_avg_speed, ''),
+    st_avg_spin = NULLIF(st_avg_spin, ''),
+    st_avg_break_x = NULLIF(st_avg_break_x, ''),
+    st_avg_break_z = NULLIF(st_avg_break_z, ''),
+    st_avg_break_z_induced = NULLIF(st_avg_break_z_induced, ''),
+    st_avg_break = NULLIF(st_avg_break, ''),
+    st_range_speed = NULLIF(st_range_speed, ''),
+
+    n_sv_formatted = NULLIF(n_sv_formatted, ''),
+    sv_avg_speed = NULLIF(sv_avg_speed, ''),
+    sv_avg_spin = NULLIF(sv_avg_spin, ''),
+    sv_avg_break_x = NULLIF(sv_avg_break_x, ''),
+    sv_avg_break_z = NULLIF(sv_avg_break_z, ''),
+    sv_avg_break_z_induced = NULLIF(sv_avg_break_z_induced, ''),
+    sv_avg_break = NULLIF(sv_avg_break, ''),
+    sv_range_speed = NULLIF(sv_range_speed, '');
