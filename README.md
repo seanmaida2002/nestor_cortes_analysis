@@ -13,14 +13,15 @@ I analyzed various metrics to better understand what made Nestor Cortes successf
 * In 2023, his walk rate spiked to 7.5 BB/9 and his WHIP increased (from 0.9235 in 2022 to 1.2520 in 2023), which shows a decline in command and efficiency.
 * In 2024, Cortes improved his control (5.5 BB/9) but had a drop in strikeout rate (22.8 K/9), which shows that hitters were making more productive contact.
 
-(Add Image)
+<img src="imgs/performance_trends.png" alt="performance trends" width="800">
+<img src="imgs/strikeout_walk.png" alt="strikeout and walk percentage" width="800">
 
 ### Swing & Miss vs. Contact
 * Even though Cortes' whiff percentage (23.6-24.5%) and swing percentage (48.3-50.5%) remained consitent throughout the four seasons, he allowed more contact in dangerous areas.
 * Cortes' hard hit percentage increased from 34.7% n 2022 to 41.5% in 2023 and 43.6% in 2024. This coincides with an increase in barrel percentage and batting average against.
 * His out of zone swing and miss percentage remained consistent (34.9-36.1%) which means he was still able to get batters to chase and expand the zone, but they were not fooled by pitches in the zone.
 
-(Add Image)
+<img src="imgs/contact_quality.png" alt="contact quality" width="800">
 
 ### Pitch Mix
 * 4-Seam Fastball
