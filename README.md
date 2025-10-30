@@ -28,7 +28,7 @@ I analyzed various metrics to better understand what made Nestor Cortes successf
   * Increase in velocity: 90.7 MPH in 2021 to 92.1 MPH in 2024
   * Horiztonal break decreased from 5.6 inches in 2021 to 4.1 inches in 2023.
 * Slider
-  * Horizontal break creased from -6.7 inches in 2021 to -2.4 inches in 2024, which means there was a decrease in glove side movement reducing its ability to deceive hitters.
+  * Horizontal break decreased from -6.7 inches in 2021 to -2.4 inches in 2024, which means there was a decrease in glove side movement reducing its ability to deceive hitters.
 * Cutter
   *Increase in velocity: 85.4 MPH in 2021 to 87.5 MPH in 2024
   * Vertical break decreased from -30.8 inches in 2021 to -26.9 inches in 2024.
