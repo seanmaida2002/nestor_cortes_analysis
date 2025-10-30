@@ -18,7 +18,7 @@ I analyzed various metrics to better understand what made Nestor Cortes successf
 
 ### Swing & Miss vs. Contact
 * Even though Cortes' whiff percentage (23.6-24.5%) and swing percentage (48.3-50.5%) remained consitent throughout the four seasons, he allowed more contact in dangerous areas.
-* Cortes' hard hit percentage increased from 34.7% n 2022 to 41.5% in 2023 and 43.6% in 2024. This coincides with an increase in barrel percentage and batting average against.
+* Cortes' hard hit percentage increased from 34.7% in 2022 to 41.5% in 2023 and 43.6% in 2024. This coincides with an increase in barrel percentage and batting average against.
 * His out of zone swing and miss percentage remained consistent (34.9-36.1%) which means he was still able to get batters to chase and expand the zone, but they were not fooled by pitches in the zone.
 
 <img src="imgs/contact_quality.png" alt="contact quality" width="600">
